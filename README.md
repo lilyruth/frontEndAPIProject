@@ -12,6 +12,8 @@ I had a choice of technologies and because I have recently been primarily workin
 
 - In completing a SPA that does not use ANY libraries or frameworks, I learned why we have them. :) However, this was a great learning experience to help me get the fundamentals down of WHY libraries like React and Redux do what they do. 10/10 fantastic learning exercise. 
 
-See the gif recording:
-(Desktop)[https://ruthie.tech/images/desktopProject.gif]
-(Mobile)[https://ruthie.tech/images/mobileProject.gif]
+See the gif recording:  
+
+[Desktop](https://ruthie.tech/images/desktopProject.gif)  
+
+[Mobile](https://ruthie.tech/images/mobileProject.gif)
