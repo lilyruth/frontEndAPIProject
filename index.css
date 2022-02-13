@@ -194,7 +194,9 @@ button {
 }
 
 .footer {
+ position: absolute;
  bottom: 0;
+ right: 0;
  font-family: var(--headers);
  font-size: 3rem;
  text-align: right;
@@ -277,6 +279,8 @@ button {
 
  .main {
   margin-top: 2rem;
+  width: 100vw;
+  height: 40vh;
  }
 
 
@@ -294,10 +298,6 @@ button {
   display: block;
  }
 
- .main {
-  width: 100vw;
-  height: 60vh;
- }
 
  .menu {
   display: flex;

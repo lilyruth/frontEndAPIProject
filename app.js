@@ -180,7 +180,7 @@ async function sendReqs(url1, url2) {
        <p>${App.work[0].name}</p>
        <p>${App.work[0].description}</p>
      </div>
-     <div class="project">
+     <div class="project omit">
        <img src='${App.work[1].thumbnail}' alt='thumbnail of work'></img>
        <p>${App.work[1].name}</p>
        <p>${App.work[1].description}</p>
