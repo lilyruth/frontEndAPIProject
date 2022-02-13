@@ -1,10 +1,10 @@
-#Front End App
+# Front End App
 
 This is a front end app to demonstrate a profile and project endpoints with a client API. 
 
 I had a choice of technologies and because I have recently been primarily working in vanilla JS, that is what I'm using. 
 
-##What I learned 
+## What I learned 
 
 - I've been wanting to learn how to incorporate an actual dark mode query for some time. I took this opportunity to learn how to do this. The '@media (prefers-color-scheme:dark)' query checks system settings. A toggle changes the class on the root to reverse. 
 
