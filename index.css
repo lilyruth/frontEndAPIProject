@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Poiret+One&display=swap');
+
+
+:root {
+ --white: rgb(245, 236, 250);
+ --main: rgb(240, 204, 240);
+ --deepPurple: rgb(17, 1, 24);
+ --bgImg: url('./images/darkGlitter.jpg');
+ --border-radius: 20px;
+ --headers: 'Comforter', cursive;
+ --text: 'Poiret One', sans-serif;
+ --border: 2px solid var(--main);
+}
+
+:root.dark-theme {
+ --main: rgb(17, 1, 24);
+ --deepPurple: rgb(240, 204, 240);
+ --border: 2px solid var(--main);
+}
+
+body {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ background: var(--main);
+ color: var(--deepPurple);
+ font-family: var(--text);
+}
+
+.heading {
+ font-family: var(--headers);
+ margin: 0;
+ padding: 0;
+}
+
+h1 {
+ font-size: 7rem;
+}
+
+h2 {
+ font-size: 4rem;
+}
+
+h3, h4, h5 {
+ font-size: 1.5rem;
+ max-width: 40rem;
+}
+
+
+img {
+ width: 10rem;
+ border-radius: var(--border-radius);
+ margin: auto;
+ object-fit: cover;
+ opacity: .9;
+ border: var(--border);
+}
+
+.work-projects {
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+}
+
+a {
+ font-size: 2rem;
+ color: var(--main);
+ margin: 1rem;
+}
+
+.links {
+ justify-content: center;
+ text-align: center;
+ margin-bottom: 1rem;
+}
+
+.projects {
+ display: flex;
+ margin: 0 auto;
+ text-align: center;
+ padding-top: 2rem;
+}
+
+.project {
+ max-width: 12rem;
+ margin: 0 auto;
+}
+
+.project h2 {
+ font-size: 3rem;
+ padding-bottom: 2rem;
+}
+
+.parent {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 85vh;
+}
+
+.bg {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin: auto;
+ height: 90vh;
+}
+
+.bg::after {
+ content: "";
+ background: fixed center/cover no-repeat var(--bgImg);
+ opacity: 0.3;
+ top: 0;
+ left: 0;
+ bottom: 0;
+ right: 0;
+ position: absolute;
+ z-index: -1
+}
+
+.main { 
+ align-items: center;
+ justify-content: center;
+ display: flex;
+ margin: auto;
+ height: 70vh;
+ width: 50vw;
+ display: flex;
+ padding-top: 4rem;
+}
+
+.loading {
+ font-family: var(--headers);
+ border: 3px solid var(--deepPurple);
+ border-radius: var(--border-radius);
+ padding: 4rem;
+ margin: auto;
+ text-align: center;
+ align-self: center;
+}
+
+.logout {
+ font-family: var(--headers);
+ border: 3px solid var(--deepPurple);
+ border-radius: var(--border-radius);
+ padding: 4rem;
+ margin: auto;
+ text-align: center;
+ align-self: center;
+}
+
+.who, .what, .where, .why {
+ text-align: center;
+}
+
+.none {
+ display: none;
+}
+
+.work {
+ text-align: center;
+}
+/* Buttons */
+
+button {
+ padding: 1rem;
+ margin: 1rem;
+ border-radius: var(--border-radius);
+ font-family: var(--text);
+ font-size: 1.5rem;
+ background: var(--deepPurple);
+ color: var(--main);
+ border: none;
+ cursor: pointer;
+}
+
+.dark-mode-btn {
+ margin: 1rem;
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+
+.logout-btn {
+ margin: 1rem;
+ position: absolute;
+ top: 0;
+ right: 0;
+}
+
+.menu {
+ width: 10rem;
+ margin-left: 0;
+}
+
+.footer {
+ bottom: 0;
+ font-family: var(--headers);
+ font-size: 3rem;
+ text-align: right;
+ padding-top: 3rem;
+ margin-right: 2rem;
+}
+
+/* Dark mode query */
+
+@media (prefers-color-scheme:dark) {
+
+ body {
+  background: var(--deepPurple);
+  color: var(--main);
+ }
+ h1.loading {
+  border: 2px solid var(--main);
+ }
+
+ h1.logout {
+  border: 2px solid var(--main);
+ }
+
+ button {
+  background-color: var(--main);
+  color: var(--deepPurple);
+ }
+
+}
+
+/* Mobile media queries */
+@media screen and (min-width: 600px) {
+ .menu {
+  padding-top: 4rem;
+ }
+}
+
+@media screen and (max-width: 1200px) {
+ .project {
+  max-width: 8rem;
+ }
+ .project img {
+  width: 8rem;
+ }
+}
+
+@media screen and (max-width: 800px) {
+
+ h2 {
+  font-size: 2rem;
+ }
+
+ .omit {
+  display: none;
+ }
+
+ a {
+  font-size: 1rem;
+ }
+}
+
+@media screen and (max-width: 600px) {
+ h1 {
+  font-size: 4rem;
+ }
+
+ h3 {
+  font-size: 1.75rem;
+ }
+
+ h4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+ }
+
+ h5 {
+  font-size: 1rem;
+ }
+
+ .main {
+  margin-top: 2rem;
+ }
+
+
+ img {
+  width: 8rem;
+ }
+
+ button {
+  font-size: 1rem;
+  padding: .5rem;
+  margin: .25rem;
+ }
+
+ .bg {
+  display: block;
+ }
+
+ .main {
+  width: 100vw;
+  height: 60vh;
+ }
+
+ .menu {
+  display: flex;
+  width: 100vw;
+  height: 10vh;
+  margin-top: 4rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .work {
+  font-size: 1.5rem;
+ }
+
+ .projects {
+  font-size: 1rem;
+ }
+
+ .footer {
+  margin-top: 3.5rem;
+  bottom: 0;
+  font-size: 1.5rem;
+ }
+
+}

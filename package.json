@@ -1,0 +1,12 @@
+{
+  "name": "frontendproject",
+  "version": "1.0.0",
+  "description": "This is a front end app to demonstrate a profile and project endpoints with a client API.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}
