@@ -64,7 +64,7 @@ img {
 
 a {
  font-size: 2rem;
- color: var(--main);
+ color: var(--deepPurple);
  margin: 1rem;
 }
 
@@ -223,6 +223,10 @@ button {
  button {
   background-color: var(--main);
   color: var(--deepPurple);
+ }
+
+ a {
+  color: var(--main);
  }
 
 }
